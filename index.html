@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
         <title>Reservia</title>
     </head>
 
@@ -10,17 +11,18 @@
             <h1>Reservia</h1>    <!--A la place du titre, ici il faudra mettre l'image reservia, ou pas ?-->
             <nav>
                 <ul>
-                    <li><a href="#liste_hebergement">Hébergements</a></li>
-                    <li><a href="#liste_activites">Activités</a></li>
+                    <li><a href="#liste hebergement">Hébergements</a></li>
+                    <li><a href="#liste activite">Activités</a></li>
                 </ul>
             </nav>
-            <div><a href="">S'inscrire</a></div>
+            <a id="inscription" href="">S'inscrire</a>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
         </header>
 
         <main>
-            <section>   <!--section de la recherche-->
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
+            <section class="formulaire">   <!--section de la recherche-->
+                
                 <fieldset>
                     <form method="POST" action="">
                         <p>
@@ -39,128 +41,119 @@
                 </fieldset>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
-            <section>   <!--section pour les hébergements-->
-                <h2 id="liste_hebergement">Hébergements à Marseille</h2>
-                <div>
-                    <p>image de l'hébergement 1
+            <section class="bloc_hebergement">   <!--section pour les hébergements-->
+                <h2 id="liste hebergement">Hébergements à Marseille</h2>
+                <div class="hebergement">image de l'hébergement 1
                     <h3>Hébergement n1</h3>
                     Nuit à partir de prix€<br />
                     Notation
-                    </p>
                 </div>
-                <div>
-                    <p>image de l'hébergement 2
-                    <h3>Hébergement n2</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+                
+                <div class="hebergement">image de l'hébergement 2
+                <h3>Hébergement n2</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 3
-                    <h3>Hébergement n3</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="hebergement">image de l'hébergement 3
+                <h3>Hébergement n3</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 4
-                    <h3>Hébergement n4</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="hebergement">image de l'hébergement 4
+                <h3>Hébergement n4</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 5
-                    <h3>Hébergement n5</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="hebergement">image de l'hébergement 5
+                <h3>Hébergement n5</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 6
-                    <h3>Hébergement n6</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="hebergement">image de l'hébergement 6
+                <h3>Hébergement n6</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <p><a href="">Afficher plus</a></p>
+
+                <a href="">Afficher plus</a>
             </section>
-            <section>   <!--section pour les hébergements les plus populaires-->
+            <section class="bloc_populaire">   <!--section pour les hébergements les plus populaires-->
                 <h2>Les plus populaires</h2>
-                <div>
-                    <p>image de l'hébergement 7
-                    <h3>Hébergement n7</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="populaire">image de l'hébergement 7
+                <h3>Hébergement n7</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 8
-                    <h3>Hébergement n8</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="populaire">image de l'hébergement 8
+                <h3>Hébergement n8</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
-                <div>
-                    <p>image de l'hébergement 9
-                    <h3>Hébergement n9</h3>
-                    Nuit à partir de prix€<br />
-                    Notation
-                    </p>
+
+                <div class="populaire">image de l'hébergement 9
+                <h3>Hébergement n9</h3>
+                Nuit à partir de prix€<br />
+                Notation
                 </div>
+
             </section>
-            <section> <!--section pour les activités-->
-                <h2 id="liste_activites">Activités à Marseille</h2>
-                <div>
-                    <p>Image de l'activité 1</p>
+            <section class="bloc_activite"> <!--section pour les activités-->
+                <h2 id="liste_activite">Activités à Marseille</h2>
+                <div class="activite_verticale">Image de l'activité 1
                     <h3>Activité 1</h3>
                 </div>
-                <div>
-                    <p>Image de l'activité 2</p>
+
+                <div class="activite_horizontale">Image de l'activité 2
                     <h3>Activité 2</h3>
                 </div>
-                <div>
-                    <p>Image de l'activité 3</p>
+
+                <div class="activite_horizontale">Image de l'activité 3
                     <h3>Activité 3</h3>
                 </div>
-                <div>
-                    <p>Image de l'activité 4</p>
+
+                <div class="activite_verticale">Image de l'activité 4
                     <h3>Activité 4</h3>
                 </div>
-                <div>
-                    <p>Image de l'activité 5</p>
+
+                <div class="activite_horizontale">Image de l'activité 5
                     <h3>Activité 5</h3>
                 </div>
-                <div>
-                    <p>Image de l'activité 6</p>
+
+                <div class="activite_horizontale">Image de l'activité 6
                     <h3>Activité 6</h3>
                 </div>
             </section>
         </main>
 
         <footer>
-            <section>
+            <div>
                 <h3>A propos</h3>
                 <ul>
                     <li><a href="">Fonctionnement du site</a></li>
                     <li><a href="">Conditions générales de vente</a></li>
                     <li><a href="">Données et confidentialité</a></li>
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h3>Nos hébergements</h3>
                 <ul>
                     <li><a href="">Charte qualité</a></li>
                     <li><a href="">Soumettre votre hôtel</a></li>
                 </ul>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h3>Assistance</h3>
                 <ul>
                     <li><a href="">Centre d'aide</a></li>
                     <li><a href="">Nous contacter</a></li>
                 </ul>
-            </section>
+            </div>
         </footer>
     </body>
 </html>
