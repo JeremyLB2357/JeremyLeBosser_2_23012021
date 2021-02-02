@@ -32,3 +32,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.hebergement {
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.bloc_hebergement {
+    flex-grow: 1;
+    margin-right: 20px;
+}
