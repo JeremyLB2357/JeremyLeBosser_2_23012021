@@ -47,19 +47,36 @@ footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #F2F2F2;
+    padding-left: 20px;
 }
 
 .carte_hebergement {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    background-color: #F2F2F2;
 }
 
 .hebergement {
     margin: auto;
-
+    background-color: white;
+    max-width: 25%;
+    max-height: 300px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 30px;
+    margin-left: 0px;
 }
+
+.image_hebergement {
+    max-width: 100%;
+    height: 125px;
+    width: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
 .bloc_populaire {
-    flex-grow: 1;    
+    flex-grow: 1;  
+    background-color: #F2F2F2;
+
 }
