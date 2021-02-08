@@ -38,17 +38,17 @@ footer {
 .hebergement_global {
     display:flex;
     justify-content: space-around;
-
 }
 
 .bloc_hebergement {
+    max-width: 75%;
     flex-grow: 2;
     margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding-left: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .carte_hebergement {
@@ -82,9 +82,31 @@ a {
 }
 
 .bloc_populaire {
+    max-width: 25%;
     flex-grow: 1;  
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+}
 
+.carte_populaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.populaire {
+    background-color: hotpink;
+    padding: 5px 5px 5px 5px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.image_populaire {
+    max-width: 40%;
+    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+    float: left;
 }
 
 .etoile_pleine {
