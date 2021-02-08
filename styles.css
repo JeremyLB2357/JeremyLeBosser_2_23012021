@@ -66,6 +66,7 @@ footer {
     padding: 5px 5px 5px 5px;
     margin-bottom: 30px;
     margin-left: 0px;
+    box-shadow: 3px 3px 20px grey;
 }
 
 .image_hebergement {
@@ -84,4 +85,12 @@ a {
     flex-grow: 1;  
     background-color: #F2F2F2;
 
+}
+
+.etoile_pleine {
+    color: #0065FC;
+}
+
+.etoile_vide {
+    color: #DEEBFF;
 }
