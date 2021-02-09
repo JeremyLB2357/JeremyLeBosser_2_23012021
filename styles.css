@@ -65,7 +65,6 @@ footer {
     padding: 5px 5px 5px 5px;
     margin-bottom: 35px;
     box-shadow: 3px 3px 20px grey;
-    
 }
 
 .hebergement h3, .hebergement p {
@@ -75,7 +74,7 @@ footer {
 .text_hebergement {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 85px;
     max-width: 100%;
     background-color: white;
@@ -115,14 +114,32 @@ a {
     width: 350px;
     margin-bottom: 30px;
     box-shadow: 3px 3px 20px grey;
+    height: 150px;
 }
 
 .image_populaire {
     width: 38%;
-    height: 140px;
+    height: 100%;
     border-radius: 20px 0px 0px 20px;
     float: left;
     object-fit: cover;
+}
+
+.text_populaire {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 170px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.text_populaire p:nth-child(2){
+    flex-grow: 1;
+}
+
+.text_populaire h3, .text_populaire p {
+    margin: 10px 0px 0px 10px;
 }
 
 .etoile_pleine {
