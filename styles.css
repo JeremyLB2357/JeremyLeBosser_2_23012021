@@ -43,12 +43,12 @@ footer {
 .bloc_hebergement {
     max-width: 75%;
     flex-grow: 2;
-    margin-right: 20px;
+    margin-right: 40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 0 20px 0 20px;
+    padding: 0 40px 0 40px;
 }
 
 .carte_hebergement {
@@ -59,14 +59,26 @@ footer {
 }
 
 .hebergement {
-    margin: auto;
     background-color: white;
-    max-width: 25%;
-    max-height: 200px;
+    width: 250px;
+    height: 200px;
     padding: 5px 5px 5px 5px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+    margin-bottom: 35px;
     box-shadow: 3px 3px 20px grey;
+    
+}
+
+.hebergement h3, .hebergement p {
+    margin: 0 0 0 10px;
+}
+
+.text_hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85px;
+    max-width: 100%;
+    background-color: white;
 }
 
 .image_hebergement {
@@ -88,7 +100,7 @@ a {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    padding: 0 20px 20px 20px;
+    padding: 0 40px 0px 40px;
 }
 
 .carte_populaire {
