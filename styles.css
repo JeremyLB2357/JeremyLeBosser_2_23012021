@@ -13,10 +13,20 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
-
+/* gestion de la police*/
 p {
     font-size: 0.9em;
 }
+
+h3 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+/*fin de la gestion de la police*/
+
 section, header {  
     background-color: orange;
     border-radius: 20px;
@@ -86,9 +96,10 @@ footer {
     object-fit: cover;
 }
 
-a {
+.bloc_hebergement a {
     text-decoration: none;
     color: black;
+    font-size: 1.1em;
 }
 
 .bloc_populaire {
