@@ -13,6 +13,10 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+p {
+    font-size: 0.9em;
+}
 section, header {  
     background-color: orange;
     border-radius: 20px;
@@ -55,8 +59,8 @@ footer {
 
 .hebergement {
     background-color: white;
-    width: 250px;
-    height: 200px;
+    width: 240px;
+    height: 190px;
     padding: 5px 5px 5px 5px;
     margin-bottom: 35px;
     box-shadow: 3px 3px 20px grey;
@@ -64,22 +68,20 @@ footer {
 }
 
 .hebergement h3, .hebergement p {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
 }
 
 .text_hebergement {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 85px;
+    height: 75px;
     max-width: 100%;
-    background-color: white;
 }
 
 .image_hebergement {
     width: 100%;
     height: 110px;
-    
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -91,6 +93,7 @@ a {
 
 .bloc_populaire {
     max-width: 25%;
+    min-width: 340px;
     flex-grow: 1;  
     background-color: #F2F2F2;
     display: flex;
@@ -116,10 +119,10 @@ a {
 .populaire {
     background-color: white;
     padding: 5px 5px 5px 5px;
-    width: 350px;
+    width: 330px;
     margin-bottom: 30px;
     box-shadow: 3px 3px 20px grey;
-    height: 150px;
+    height: 140px;
     border-radius: 20px;
 }
 
@@ -134,10 +137,9 @@ a {
 .text_populaire {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 170px;
+    height: 90%;
+    width: 62%;
     justify-content: space-around;
-    background-color: white;
 }
 
 .text_populaire p:nth-child(2){
@@ -145,7 +147,7 @@ a {
 }
 
 .text_populaire h3, .text_populaire p {
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 20px;
 }
 
 .etoile_pleine {
@@ -153,7 +155,7 @@ a {
 }
 
 .etoile_vide {
-    color: #DEEBFF;
+    color: #D9D9D9;
 }
 /*fin de la partie hébergement*/
 
