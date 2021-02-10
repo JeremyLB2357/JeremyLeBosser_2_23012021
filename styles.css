@@ -161,6 +161,10 @@ footer {
     margin: 10px 0px 0px 20px;
 }
 
+.etoile {
+    display: flex;
+}
+
 .etoile_pleine {
     color: #0065FC;
 }
