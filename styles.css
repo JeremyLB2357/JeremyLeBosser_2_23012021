@@ -7,19 +7,30 @@
     font-family: Raleway;
 }
 
+body {
+    max-width: 1450px;
+    margin:auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* gestion de la police*/
+p {
+    font-size: 0.9em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+/*fin de la gestion de la police*/
+
 section, header {  
     background-color: orange;
     border-radius: 20px;
 }
-
-div {
-    background-color: green;
-    border-radius: 20px;
-}
-    /* .bloc_hebergement, .bloc_populaire, footer {
-    background-color: #F2F2F2;
-}
-    */
 
 nav {
     border-top: 2px #0065FC solid;
@@ -32,14 +43,134 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.hebergement {
+/* à partir d'ici je manipule la partie hébergement */
+.hebergement_global {
     display:flex;
     justify-content: space-around;
-
 }
 
 .bloc_hebergement {
-    flex-grow: 1;
-    margin-right: 20px;
+    max-width: 75%;
+    flex-grow: 2;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 0 40px 0 40px;
 }
+
+.carte_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.hebergement {
+    background-color: white;
+    width: 240px;
+    height: 190px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 35px;
+    box-shadow: 3px 3px 5px #D9D9D9;
+    border-radius: 20px;
+}
+
+.hebergement h3, .hebergement p {
+    margin: 0 0 0 15px;
+}
+
+.text_hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75px;
+    max-width: 100%;
+}
+
+.image_hebergement {
+    width: 100%;
+    height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.bloc_hebergement a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+.bloc_populaire {
+    max-width: 25%;
+    min-width: 340px;
+    flex-grow: 1;  
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0px 40px;
+}
+
+.titre_populaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph_populaire {
+    margin: auto;
+    margin-right: 0px;
+}
+.carte_populaire {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.populaire {
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    width: 330px;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 5px #D9D9D9;
+    height: 140px;
+    border-radius: 20px;
+}
+
+.image_populaire {
+    width: 38%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    float: left;
+    object-fit: cover;
+}
+
+.text_populaire {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 62%;
+    justify-content: space-around;
+}
+
+.text_populaire p:nth-child(2){
+    flex-grow: 1;
+}
+
+.text_populaire h3, .text_populaire p {
+    margin: 10px 0px 0px 20px;
+}
+
+.etoile {
+    display: flex;
+}
+
+.etoile_pleine {
+    color: #0065FC;
+}
+
+.etoile_vide {
+    color: #D9D9D9;
+}
+/*fin de la partie hébergement*/
+
