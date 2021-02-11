@@ -51,7 +51,6 @@ input[type=checkbox] {
 
 .formulaire1 {
     height: 50px;
-    background-color: yellow;
     display:flex;
     justify-content: flex-start;
 }
@@ -101,10 +100,15 @@ input[type=submit] {
     border-radius: 20px 0 0 20px;
 }
 
-.fa-info-circle {
+.icone-fini {
+    font-size: 0.70em;
+}
+.icon-background {
     color: white;
-    background-color: #0065FC;
-    border-radius: 100%;
+    text-shadow: 0 0 3px black;
+}
+.fa-info {
+    color: #0065FC;
 }
 /*fin de la partie recherche et filtre */
 
