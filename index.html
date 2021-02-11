@@ -22,26 +22,29 @@
         </header>
 
         <main>
-            <section class="formulaire">   <!--section de la recherche-->
+            <fieldset>
+                <form method="POST" action="">
+                    <p>
+                        <label for="villerecherche"><i class="fas fa-map-marker-alt"></i></label>
+                        <input type="search" name="villerecherche" id="villerecherche" placeholder="Marseille, France"/>
+                        <input type="submit" value="Rechercher" />
+                    </p>
+                </form>
+                <form method="POST" action="">
+                    <p>Filtres
+                        <input type="checkbox" id="Économique" /> 
+                        <label for="Économique"><i class="fas fa-money-bill-wave"></i>Économique</label>
+                        <input type="checkbox" id="Familial" /> 
+                        <label for="Familial"><i class="fas fa-child"></i>Familial</label>
+                        <input type="checkbox" id="Romantique" /> 
+                        <label for="Romantique"><i class="fas fa-heart"></i>Romantique</label>
+                        <input type="checkbox" id="Animaux autorisés" /> 
+                        <label for="Animaux autorisés"><i class="fas fa-dog"></i>Animaux autorisés</label>
+                    </p>
+                </form>
+                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>    
+            </fieldset>
                 
-                <fieldset>
-                    <form method="POST" action="">
-                        <p>
-                            <input type="search" name="villerecherche" />
-                            <input type="submit" value="Rechercher" />
-                        </p>
-                    </form>
-                    <form method="POST" action="">
-                        <p>Filtres
-                            <input type="checkbox" name="Économique" /> <label for="Économique">Économique</label>
-                            <input type="checkbox" name="Familial" /> <label for="Familial">Familial</label>
-                            <input type="checkbox" name="Romantique" /> <label for="Romantique">Romantique</label>
-                            <input type="checkbox" name="Animaux autorisés" /> <label for="Animaux autorisés">Animaux autorisés</label>
-                        </p>
-                    </form>
-                </fieldset>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </section>
             <section class="hebergement_global">
                 <section class="bloc_hebergement">   <!--section pour les hébergements-->                       
                         <h2 id="liste hebergement">Hébergements à Marseille</h2>

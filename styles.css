@@ -36,6 +36,16 @@ nav {
     border-top: 2px #0065FC solid;
 }
 
+/*à partir d'ici je manipule le formulaire de recherche et de filtre */
+fieldset {
+    background-color: orange;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none; /*propriété qui affiche un élément avec la mise en forme OS*/
+}
+/*fin de la partie recherche et filtre */
+
 footer {
     background-color: #F2F2F2;
     width: 80%;
