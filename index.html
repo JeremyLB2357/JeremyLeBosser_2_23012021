@@ -23,12 +23,20 @@
 
         <main>
             <fieldset>
-                <form method="POST" action="">
-                    <p>
-                        <label for="villerecherche"><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="search" name="villerecherche" id="villerecherche" placeholder="Marseille, France"/>
-                        <input type="submit" value="Rechercher" />
-                    </p>
+                <form class="formulaire1" method="POST" action="">
+                    
+                        <div class="icone_recherche">
+                            <label for="villerecherche">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </label>
+                        </div>
+                        <div class="champ_recherche">
+                            <input type="search" name="villerecherche" id="villerecherche" placeholder="Marseille, France"/>
+                        </div>
+                        <div class="bouton_recherche">
+                            <input type="submit" value="Rechercher" />
+                        </div>
+                    
                 </form>
                 <form method="POST" action="">
                     <p>Filtres
@@ -42,7 +50,9 @@
                         <label for="Animaux autorisés"><i class="fas fa-dog"></i>Animaux autorisés</label>
                     </p>
                 </form>
-                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>    
+                <p>
+                    <span class="logo_info"><i class="fas fa-info-circle fa-lg"></i></span>
+                    <span>Plus de 500 logements sont disponibles dans cette ville</span></p>    
             </fieldset>
                 
             <section class="hebergement_global">
