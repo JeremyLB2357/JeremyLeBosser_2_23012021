@@ -173,4 +173,65 @@ footer {
     color: #D9D9D9;
 }
 /*fin de la partie hébergement*/
+/*à partir d'ici je manipule les activités*/
+.activite_globale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+.bloc_activite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 445px;
+    background-color: teal;
+    align-content: space-between;
+}
 
+.activite {
+    display: flex;
+    width: 300px;
+    height: 150px;
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+/*première carte activité*/
+.activite:nth-child(3n+1) {
+    height: 445px;
+}
+
+.image_activite {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+/*seconde carte activité*/
+.activite:nth-child(2) {
+    height: 240px; 
+}
+.image_activite1 {
+    width: 300px;
+    height: 185px;
+    object-fit: cover;
+}
+/*carte activité restante*/
+.image_activite2 {
+    width: 300px;
+    max-height: 100%;
+    background-color: purple;
+    flex-grow: 2;
+}
+.image_activite2 img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+.activite h3 {
+    background-color: red;
+    height: 55px;
+    margin: 0;
+}
+
+/*fin de la partie activités
