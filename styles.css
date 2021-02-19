@@ -31,11 +31,42 @@ section, header {
     background-color: orange;
     border-radius: 20px;
 }
-
+.logo_reservia {
+    height: 45px;
+    width: 100px;
+    float: left;
+    margin-top: 50px;
+}
 nav {
-    border-top: 2px #0065FC solid;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
+nav a {
+    text-decoration: none;
+    color: #0065FC;
+    background-color: coral;
+    height: 45px;
+    padding: 50px 25px 0 25px;
+}
+
+.ancre_hebergement {
+    border-top: 2px #0065FC solid;
+    padding-top: 48px;
+}
+
+#inscription {
+    font-weight: bold;
+}
+
+header h2 {
+    margin-bottom: 10px;
+}
+header p {
+    margin-top: 0;
+}
+}
 footer {
     background-color: #F2F2F2;
     width: 80%;
