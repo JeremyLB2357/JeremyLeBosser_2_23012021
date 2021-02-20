@@ -46,13 +46,14 @@ footer {
 /* à partir d'ici je manipule la partie hébergement */
 .hebergement_global {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 
 .bloc_hebergement {
-    max-width: 75%;
-    flex-grow: 2;
-    margin-right: 40px;
+    max-width: 60%;
+    min-width: 750px;
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -61,10 +62,12 @@ footer {
 }
 
 .carte_hebergement {
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #F2F2F2;
+    flex-direction: column;
 }
 
 .hebergement {
@@ -103,9 +106,7 @@ footer {
 }
 
 .bloc_populaire {
-    max-width: 25%;
-    min-width: 340px;
-    flex-grow: 1;  
+    width: 350px;  
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -172,5 +173,49 @@ footer {
 .etoile_vide {
     color: #D9D9D9;
 }
+
+@media all and (max-device-width: 1360px)
+{
+    .bloc_populaire {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .carte_populaire {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .bloc_hebergement {
+        max-width: 100%;
+    }
+}
+@media all and (max-device-width: 950px)
+{
+    .carte_hebergement {
+        height: 750px;
+    }
+    .bloc_hebergement {
+        min-width: 500px;
+    }
+}
+@media all and (max-device-width: 700px)
+{
+    .populaire {
+        width: 100%;
+        min-width: 310px;
+    }
+    .carte_hebergement {
+        height: initial;
+    }
+    .bloc_hebergement {
+        min-width: initial;
+    }
+    .hebergement {
+        width: 100%;
+        min-width: 310px;
+    }
+}
+
 /*fin de la partie hébergement*/
 
