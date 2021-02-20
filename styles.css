@@ -40,7 +40,7 @@ section, header {
 nav {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 nav a {
@@ -66,6 +66,7 @@ header h2 {
 header p {
     margin-top: 0;
 }
+
 }
 footer {
     background-color: #F2F2F2;
