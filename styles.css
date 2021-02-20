@@ -36,7 +36,7 @@ section, header {
 nav {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     background-color: darkgoldenrod;
 }
 .logo_reservia {
@@ -54,6 +54,7 @@ nav p {
 }
 .ancre {
     display: flex;
+    background-color: darkgray;
 }
 .ancre_hebergement, .ancre_activite {
     margin-top: 0;
@@ -65,13 +66,17 @@ nav p {
     border-top: 2px #0065FC solid;
     padding-top: 23px;
 }
+.ancre_hebergement a {
+    color: #0065FC;
+}
  nav a {
     text-decoration: none;
-    color: #0065FC;
+    color: black;
     height: 45px;
  }
-#inscription {
+#inscription a {
     font-weight: bold;
+    color: #0065FC;
 }
 
 header h2 {
@@ -80,21 +85,20 @@ header h2 {
 
 @media all and (max-device-width: 480px)
 {
-    nav {
-        justify-content: stretch;
-    }
-    nav div {
-        background-color: chartreuse;
-        display: flex;
-        padding: 0 0 0 0;
-        margin-bottom: 30px;
+    .ancre {
+        order: 3;
         flex-grow: 1;
     }
-    .ancre_hebergement, .ancre_activite {
-        background-color: pink;
-        width: 50%;
 
+    .ancre_activite, .ancre_hebergement {
+        width: 50%;
     }
+
+    .ancre_hebergement {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+    }
+
 }
 /*fin du header*/ 
 footer {
