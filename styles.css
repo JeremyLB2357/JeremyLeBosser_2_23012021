@@ -81,6 +81,9 @@ input[type=submit] {
     border: none;
     padding: 0 20px 0 20px;
 }
+.bouton_recherche_mobile {
+    display: none;
+}
 
 .icone_recherche {
     width: 50px;
@@ -156,6 +159,27 @@ input[type=checkbox] {
 }
 .fa-info {
     color: #0065FC;
+}
+
+@media all and (max-device-width: 480px)
+{
+    .bouton_recherche {
+        display: none;
+    }
+    .bouton_recherche_mobile {
+        display: initial;
+        position: relative;
+        right: 10px;
+    }
+    .bouton_recherche_mobile button {
+        display: table-cell;
+        height: 50px;
+        width: 50px;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        border: 2px #0065FC solid;
+    }
 }
 /*fin de la partie recherche et filtre */
 
