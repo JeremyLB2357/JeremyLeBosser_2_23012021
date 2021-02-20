@@ -178,7 +178,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
+    
 }
 .bloc_activite {
     display: flex;
@@ -243,4 +243,32 @@ footer {
     box-shadow: 3px 3px 5px #D9D9D9;
 }
 
+@media all and (max-device-width: 1300px)
+{
+    .bloc_activite {
+        height: 600px;
+        align-content: space-around;
+    }
+    
+    .activite:nth-child(1n+1) {
+        height: 190px;
+    }
+    .activite:nth-child(1n+1) img {
+        height: 135px;
+    }
+}
+@media all and (max-device-width: 750px)
+{
+    .bloc_activite {
+        height: initial;
+    }
+    
+    .activite:nth-child(1n+1) {
+        height: 190px;
+        margin-bottom: 20px;
+    }
+    .activite:nth-child(1n+1) img {
+        height: 135px;
+    }
+}
 /*fin de la partie activités
