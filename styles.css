@@ -257,10 +257,27 @@ input[type=checkbox] {
 
 footer {
     background-color: #F2F2F2;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: stretch;
+}
+
+footer div {
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer li {
+    margin-bottom: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
 }
 /* à partir d'ici je manipule la partie hébergement */
 .hebergement_global {
