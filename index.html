@@ -23,26 +23,74 @@
         </header>
 
         <main>
-            <section class="formulaire">   <!--section de la recherche-->
-                
-                <fieldset>
-                    <form method="POST" action="">
-                        <p>
-                            <input type="search" name="villerecherche" />
+            <fieldset>
+                <form class="formulaire1" method="POST" action="">
+                    
+                        <div class="icone_recherche">
+                            <label for="villerecherche">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                            </label>
+                        </div>
+                        <div class="champ_recherche">
+                            <input type="search" name="villerecherche" id="villerecherche" placeholder="Marseille, France"/>
+                        </div>
+                        <div class="bouton_recherche">
                             <input type="submit" value="Rechercher" />
-                        </p>
-                    </form>
-                    <form method="POST" action="">
-                        <p>Filtres
-                            <input type="checkbox" name="Économique" /> <label for="Économique">Économique</label>
-                            <input type="checkbox" name="Familial" /> <label for="Familial">Familial</label>
-                            <input type="checkbox" name="Romantique" /> <label for="Romantique">Romantique</label>
-                            <input type="checkbox" name="Animaux autorisés" /> <label for="Animaux autorisés">Animaux autorisés</label>
-                        </p>
-                    </form>
-                </fieldset>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </section>
+                        </div>
+                        <div class="bouton_recherche_mobile">
+                            <button type="submit"><i class="fas fa-search fa-lg"></i></button>
+                        </div>
+                    
+                </form>
+                <form class="formulaire2" method="POST" action="">
+                    <p>Filtres</p>
+                    <div>
+                        <label for="Économique" class="checkbox">
+                            <input type="checkbox" id="Économique" />
+                            <span class="bouton">    
+                                <span class="icone_checkbox">
+                                    <i class="fas fa-money-bill-wave fa-sm"></i>
+                                </span>
+                                <span class="text_checkbox">Économique</span>
+                            </span>
+                        </label>
+                        <label for="Familial" class="checkbox">
+                            <input type="checkbox" id="Familial" />
+                            <span class="bouton">
+                                <span class="icone_checkbox">
+                                    <i class="fas fa-child fa-sm"></i>
+                                </span>
+                                <span class="text_checkbox">Familial</span>
+                            </span>
+                        </label>
+                        <label for="Romantique" class="checkbox">
+                            <input type="checkbox" id="Romantique" />
+                            <span class="bouton">
+                                <span class="icone_checkbox">
+                                    <i class="fas fa-heart fa-sm"></i>
+                                </span>
+                                <span class="text_checkbox">Romantique</span>
+                            </span>
+                        </label>
+                        <label for="Animaux autorisés" class="checkbox">
+                            <input type="checkbox" id="Animaux autorisés" />
+                            <span class="bouton">
+                                <span class="icone_checkbox">
+                                    <i class="fas fa-dog fa-sm"></i>
+                                </span>
+                                <span class="text_checkbox">Animaux autorisés</span>
+                            </span>
+                        </label>
+                    </div>
+                </form>
+                <p>
+                    <span class="fa-stack icone-fini">
+                        <i class="fas fa-circle fa-stack-2x icon-background"></i>
+                        <i class="fas fa-info fa-stack-1x"></i>
+                    </span>
+                    <span>Plus de 500 logements sont disponibles dans cette ville</span></p>    
+            </fieldset>
+                
             <section class="hebergement_global">
                 <section class="bloc_hebergement">   <!--section pour les hébergements-->                       
                         <h2 id="liste_hebergement">Hébergements à Marseille</h2>

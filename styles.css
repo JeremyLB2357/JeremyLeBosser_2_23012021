@@ -101,6 +101,160 @@ header h2 {
 
 }
 /*fin du header*/ 
+/*à partir d'ici je manipule le formulaire de recherche et de filtre */
+fieldset {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+
+.formulaire1 {
+    height: 50px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    border: none;
+    border-top: 2px solid #D9D9D9;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+input[type=search]::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 50px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    padding: 0 20px 0 20px;
+}
+.bouton_recherche_mobile {
+    display: none;
+}
+
+.icone_recherche {
+    width: 50px;
+    height: 50px;
+    display: table;
+    
+}
+.icone_recherche label {
+    background-color: #D9D9D9;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px 0 0 20px;
+}
+.formulaire2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.checkbox {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.bouton {
+    display: inline-block;
+    background-color: white;
+    height: 46px;
+    padding-right: 20px;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #D9D9D9;
+    z-index: 1;
+    position: relative;
+}
+
+.text_checkbox, .icone_checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.text_checkbox {
+    max-width: 100%;
+    line-height: 40px;
+}
+.icone_checkbox {
+    color: #0065FC;
+    width: 46px;
+    background-color: #DEEBFF;
+    line-height: 46px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF;
+    bottom: 2px;
+    right: 2px;
+    font-size: 1.1em;
+}
+
+.bouton:hover {
+    background-color: #DEEBFF;
+}
+.checkbox input:checked + .bouton {
+    background-color: #0065FC;
+    color: white;
+}
+
+.icone-fini {
+    font-size: 0.70em;
+    float: left;
+}
+.icon-background {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+.fa-info {
+    color: #0065FC;
+}
+
+@media all and (max-device-width: 480px)
+{
+    .bouton_recherche {
+        display: none;
+    }
+    .bouton_recherche_mobile {
+        display: initial;
+        position: relative;
+        right: 10px;
+    }
+    .bouton_recherche_mobile button {
+        display: table-cell;
+        height: 50px;
+        width: 50px;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 15px 15px 15px 15px;
+        border: 2px #0065FC solid;
+    }
+}
+/*fin de la partie recherche et filtre */
+
 footer {
     background-color: #F2F2F2;
     width: 80%;
