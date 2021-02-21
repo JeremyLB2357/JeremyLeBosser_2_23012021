@@ -437,4 +437,102 @@ footer {
 }
 
 /*fin de la partie hébergement*/
+/*à partir d'ici je manipule les activités*/
+.activite_globale {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.bloc_activite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 445px;
+    align-content: space-between;
+}
 
+.activite {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+.activite img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+/*première et quetrième cartes activités*/
+.activite:nth-child(3n+1) {
+    height: 445px;
+}
+.activite:nth-child(3n+1) img {
+    height: 390px;
+}
+/*seconde carte activité*/
+.activite:nth-child(2) {
+    height: 240px; 
+}
+.activite:nth-child(2) img {
+    height: 185px;
+}
+/*troisième carte activité*/
+.activite:nth-child(3) {
+    height: 170px;
+}
+.activite:nth-child(3) img {
+    height: 115px;
+}
+/*cinquième carte activité*/
+.activite:nth-child(5) {
+    height: 195px;
+}
+.activite:nth-child(5) img {
+    height: 140px;
+}
+/*sixième carte activité*/
+.activite:nth-child(6) {
+    height: 210px;
+}
+.activite:nth-child(6) img {
+    height: 155px;
+}
+.activite h3 {
+    height: 55px;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    padding-left: 20px;
+    line-height: 55px;
+    box-shadow: 3px 3px 5px #D9D9D9;
+}
+
+@media all and (max-device-width: 1300px)
+{
+    .bloc_activite {
+        height: 600px;
+        align-content: space-around;
+    }
+    
+    .activite:nth-child(1n+1) {
+        height: 190px;
+    }
+    .activite:nth-child(1n+1) img {
+        height: 135px;
+    }
+}
+@media all and (max-device-width: 750px)
+{
+    .bloc_activite {
+        height: initial;
+    }
+    
+    .activite:nth-child(1n+1) {
+        height: 190px;
+        margin-bottom: 20px;
+    }
+    .activite:nth-child(1n+1) img {
+        height: 135px;
+    }
+}
+/*fin de la partie activités
