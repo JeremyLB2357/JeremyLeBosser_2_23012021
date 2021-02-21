@@ -25,17 +25,82 @@ h3 {
 h2 {
     font-size: 1.4em;
 }
+
 /*fin de la gestion de la police*/
 
 section, header {  
     background-color: orange;
     border-radius: 20px;
 }
-
+/*à partir d'ici je manipule le header*/
 nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: darkgoldenrod;
+}
+.logo_reservia {
+    flex-grow: 2;
+}
+.logo_reservia img {
+    height: 45px;
+}
+nav p {
+    color: #0065FC;
+    background-color: coral;
+    height: 45px;
+    padding: 25px 25px 0 0;
+    margin-top: 0;
+}
+.ancre {
+    display: flex;
+    background-color: darkgray;
+}
+.ancre_hebergement, .ancre_activite {
+    margin-top: 0;
+    background-color: crimson;
+    height: 45px;
+    padding: 25px 25px 0 25px;
+}
+.ancre_hebergement {
     border-top: 2px #0065FC solid;
+    padding-top: 23px;
+}
+.ancre_hebergement a {
+    color: #0065FC;
+}
+ nav a {
+    text-decoration: none;
+    color: black;
+    height: 45px;
+ }
+#inscription a {
+    font-weight: bold;
+    color: #0065FC;
 }
 
+header h2 {
+    margin-bottom: 10px;
+}
+
+@media all and (max-device-width: 480px)
+{
+    .ancre {
+        order: 3;
+        flex-grow: 1;
+    }
+
+    .ancre_activite, .ancre_hebergement {
+        width: 50%;
+    }
+
+    .ancre_hebergement {
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+    }
+
+}
+/*fin du header*/ 
 footer {
     background-color: #F2F2F2;
     width: 80%;
