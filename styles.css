@@ -52,6 +52,7 @@ h2 {
     margin-top: 0;
     height: 45px;
     padding: 25px 25px 0 25px;
+    text-align: center;
 }
 .ancre_hebergement {
     border-top: 2px #0065FC solid;
@@ -67,13 +68,14 @@ h2 {
 #inscription a {
     font-weight: bold;
     color: #0065FC;
+
 }
 
 header h2 {
     margin-bottom: 10px;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-device-width: 499px)
 {
     .ancre {
         order: 3;
@@ -88,7 +90,14 @@ header h2 {
         border-top: none;
         border-bottom: 2px #0065FC solid;
     }
-
+    .ancre_activite {
+        border-bottom: 2px #DEEBFF solid;
+        padding-top: 23px;
+    }
+    #inscription {
+        flex-grow: 2;
+        text-align: center;
+    }
 }
 /*fin du header*/ 
 /*à partir d'ici je manipule le formulaire de recherche et de filtre */
@@ -96,7 +105,6 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.1em;
     border: none;
 }
 
@@ -104,6 +112,7 @@ fieldset {
     height: 50px;
     display:flex;
     justify-content: flex-start;
+    font-size: 1em;
 }
 
 input[type=search] {
@@ -242,6 +251,9 @@ input[type=checkbox] {
         border-radius: 15px 15px 15px 15px;
         border: 2px #0065FC solid;
     }
+    .text_checkbox {
+        font-size: 0.8em;
+    }
 }
 /*fin de la partie recherche et filtre */
 /*à partir d'ici je manipule le footer*/
@@ -269,6 +281,13 @@ footer li {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+@media all and (max-device-width: 750px){
+    .menu_footer {
+        flex-direction: column;
+        margin-left: 20px;
+    }
 }
 /*fin du footer*/
 /* à partir d'ici je manipule la partie hébergement */
@@ -416,15 +435,24 @@ footer a {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
+    .populaire {
+        margin-bottom: 10px;
+    }
     .bloc_hebergement {
         max-width: 100%;
+    }
+    .carte_hebergement {
+        height: 430px;
+        align-items: center;
+    }
+    .hebergement {
+        margin-bottom: initial;
     }
 }
 @media all and (max-device-width: 950px)
 {
     .carte_hebergement {
-        height: 750px;
+        height: 640px;
     }
     .bloc_hebergement {
         min-width: 500px;
@@ -432,19 +460,39 @@ footer a {
 }
 @media all and (max-device-width: 700px)
 {
+    .bloc_populaire {
+        border-radius: initial;
+    }
     .populaire {
-        width: 100%;
+        width: 80%;
         min-width: 310px;
     }
     .carte_hebergement {
         height: initial;
+        background-color: initial;
     }
     .bloc_hebergement {
         min-width: initial;
+        border-radius: initial;
+        background-color: initial;
     }
     .hebergement {
-        width: 100%;
+        width: 60%;
         min-width: 310px;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-device-width: 480px)
+{
+    .bloc_hebergement, .bloc_populaire {
+        padding: initial;
+        align-items: center;
+    }
+    .bloc_hebergement h2, .bloc_hebergement a, {
+        width: 310px;
+    }
+    .titre_populaire {
+        width: 80%;
     }
 }
 
@@ -535,10 +583,15 @@ footer a {
 }
 @media all and (max-device-width: 750px)
 {
+    .activite_globale {
+        align-items: center;
+    }
+    .activite_globale h2 {
+        width: 80%
+    }
     .bloc_activite {
         height: initial;
     }
-    
     .activite:nth-child(1n+1) {
         height: 190px;
         margin-bottom: 20px;
