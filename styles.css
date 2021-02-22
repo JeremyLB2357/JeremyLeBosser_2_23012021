@@ -7,12 +7,6 @@
     font-family: Raleway;
 }
 
-body {
-    max-width: 1450px;
-    margin:auto;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 /* gestion de la police*/
 p {
     font-size: 0.9em;
@@ -27,17 +21,15 @@ h2 {
 }
 
 /*fin de la gestion de la police*/
-
-section, header {  
-    background-color: orange;
-    border-radius: 20px;
+.corps {
+    max-width: 1450px;
+    margin: auto;
 }
 /*à partir d'ici je manipule le header*/
-nav {
+.menu_prinipal {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: darkgoldenrod;
 }
 .logo_reservia {
     flex-grow: 2;
@@ -45,20 +37,19 @@ nav {
 .logo_reservia img {
     height: 45px;
 }
-nav p {
-    color: #0065FC;
-    background-color: coral;
+.menu_prinipal p {
     height: 45px;
     padding: 25px 25px 0 0;
     margin-top: 0;
 }
+.menu_prinipal a {
+    color: black;
+}
 .ancre {
     display: flex;
-    background-color: darkgray;
 }
 .ancre_hebergement, .ancre_activite {
     margin-top: 0;
-    background-color: crimson;
     height: 45px;
     padding: 25px 25px 0 25px;
 }
@@ -69,11 +60,10 @@ nav p {
 .ancre_hebergement a {
     color: #0065FC;
 }
- nav a {
+.menu_prinipal a {
     text-decoration: none;
-    color: black;
     height: 45px;
- }
+}
 #inscription a {
     font-weight: bold;
     color: #0065FC;
@@ -103,11 +93,11 @@ header h2 {
 /*fin du header*/ 
 /*à partir d'ici je manipule le formulaire de recherche et de filtre */
 fieldset {
-    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 1.1em;
+    border: none;
 }
 
 .formulaire1 {
@@ -168,7 +158,7 @@ input[type=submit] {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    margin-top: 10px;
 }
 
 input[type=checkbox] {
@@ -254,18 +244,19 @@ input[type=checkbox] {
     }
 }
 /*fin de la partie recherche et filtre */
-
+/*à partir d'ici je manipule le footer*/
 footer {
     background-color: #F2F2F2;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
 }
 
-footer div {
-    margin: auto;
-    margin-left: 0;
+.menu_footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 75%;
+}
+.menu_footer div {
     margin-top: 0;
 }
 footer ul {
@@ -279,11 +270,13 @@ footer a {
     text-decoration: none;
     color: black;
 }
+/*fin du footer*/
 /* à partir d'ici je manipule la partie hébergement */
 .hebergement_global {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
+    margin-bottom: 50px;
 }
 
 .bloc_hebergement {
@@ -295,6 +288,7 @@ footer a {
     flex-direction: column;
     background-color: #F2F2F2;
     padding: 0 40px 0 40px;
+    border-radius: 20px;
 }
 
 .carte_hebergement {
@@ -347,6 +341,7 @@ footer a {
     display: flex;
     flex-direction: column;
     padding: 0 40px 0px 40px;
+    border-radius: 20px;
 }
 
 .titre_populaire {
@@ -459,7 +454,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    margin-bottom: 50px;
 }
 .bloc_activite {
     display: flex;
