@@ -75,7 +75,7 @@ header h2 {
     margin-bottom: 10px;
 }
 
-@media all and (max-device-width: 499px)
+@media all and (max-width: 499px)
 {
     .ancre {
         order: 3;
@@ -232,7 +232,7 @@ input[type=checkbox] {
     color: #0065FC;
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     .bouton_recherche {
         display: none;
@@ -283,7 +283,7 @@ footer a {
     color: black;
 }
 
-@media all and (max-device-width: 750px){
+@media all and (max-width: 750px){
     .menu_footer {
         flex-direction: column;
         margin-left: 20px;
@@ -424,7 +424,7 @@ footer a {
     color: #D9D9D9;
 }
 
-@media all and (max-device-width: 1360px)
+@media all and (max-width: 1360px)
 {
     .bloc_populaire {
         width: 100%;
@@ -449,7 +449,7 @@ footer a {
         margin-bottom: initial;
     }
 }
-@media all and (max-device-width: 950px)
+@media all and (max-width: 950px)
 {
     .carte_hebergement {
         height: 640px;
@@ -458,7 +458,7 @@ footer a {
         min-width: 500px;
     }
 }
-@media all and (max-device-width: 700px)
+@media all and (max-width: 700px)
 {
     .bloc_populaire {
         border-radius: initial;
@@ -482,13 +482,13 @@ footer a {
         margin-bottom: 10px;
     }
 }
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
     .bloc_hebergement, .bloc_populaire {
         padding: initial;
         align-items: center;
     }
-    .bloc_hebergement h2, .bloc_hebergement a, {
+    .bloc_hebergement h2, .bloc_hebergement a {
         width: 310px;
     }
     .titre_populaire {
@@ -567,7 +567,7 @@ footer a {
     box-shadow: 3px 3px 5px #D9D9D9;
 }
 
-@media all and (max-device-width: 1300px)
+@media all and (max-width: 1300px)
 {
     .bloc_activite {
         height: 600px;
@@ -581,7 +581,7 @@ footer a {
         height: 135px;
     }
 }
-@media all and (max-device-width: 750px)
+@media all and (max-width: 750px)
 {
     .activite_globale {
         align-items: center;
@@ -600,4 +600,4 @@ footer a {
         height: 135px;
     }
 }
-/*fin de la partie activités
+/*fin de la partie activités*/
