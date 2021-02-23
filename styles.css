@@ -49,6 +49,8 @@ a {
 
 .ancre {
     display: flex;
+    position: fixed;    /*propriétés pour fixer les ancres*/
+    right: 150px;        /*fin des propriétés pour fixer les ancres*/
 }
 .ancre_hebergement, .ancre_activite {
     margin-top: 0;
@@ -80,23 +82,32 @@ header h2 {
     .ancre {
         order: 3;
         flex-grow: 1;
+        right: 0;   /*propriétés pour fixer les ancres*/
+        top: 90px;
+        width: 100% /*fin des propriétés pour fixer les ancres*/
     }
-
+    .menu_prinipal {
+        height: 155px;  /*propriétés pour fixer les ancres*/
+    }
     .ancre_activite, .ancre_hebergement {
         width: 50%;
     }
 
     .ancre_hebergement {
         border-top: none;
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 4px #0065FC solid;
+        padding-top: 21px;
     }
     .ancre_activite {
-        border-bottom: 2px #DEEBFF solid;
-        padding-top: 23px;
+        border-bottom: 4px #DEEBFF solid;
+        padding-top: 21px;
     }
     #inscription {
         flex-grow: 2;
         text-align: center;
+    }
+    header h2, header h2 + p {
+        margin-left: 20px;
     }
 }
 /*fin du header*/ 
@@ -168,6 +179,7 @@ input[type=submit] {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: flex-start;
 }
 
 input[type=checkbox] {
@@ -234,6 +246,9 @@ input[type=checkbox] {
 
 @media all and (max-width: 480px)
 {
+    fieldset {
+        padding-left: 20px;
+    }
     .bouton_recherche {
         display: none;
     }
@@ -251,6 +266,7 @@ input[type=checkbox] {
         border-radius: 15px 15px 15px 15px;
         border: 2px #0065FC solid;
     }
+
     .text_checkbox {
         font-size: 0.8em;
     }
@@ -581,6 +597,15 @@ footer li {
     }
     .bloc_activite {
         height: initial;
+        width: 100%;
+    }
+    .activite {
+        min-width: 310px;
+        width: 60%;
+    }
+    .activite img {
+        min-width: 310px;
+        width: 100%;
     }
     .activite:nth-child(1n+1) {
         height: 190px;
