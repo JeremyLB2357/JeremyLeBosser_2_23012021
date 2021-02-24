@@ -49,8 +49,6 @@ a {
 
 .ancre {
     display: flex;
-    position: fixed;    /*propriétés pour fixer les ancres*/
-    right: 150px;        /*fin des propriétés pour fixer les ancres*/
 }
 .ancre_hebergement, .ancre_activite {
     margin-top: 0;
@@ -82,13 +80,8 @@ header h2 {
     .ancre {
         order: 3;
         flex-grow: 1;
-        right: 0;   /*propriétés pour fixer les ancres*/
-        top: 90px;
-        width: 100% /*fin des propriétés pour fixer les ancres*/
     }
-    .menu_prinipal {
-        height: 155px;  /*propriétés pour fixer les ancres*/
-    }
+
     .ancre_activite, .ancre_hebergement {
         width: 50%;
     }
