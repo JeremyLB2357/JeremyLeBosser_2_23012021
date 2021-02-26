@@ -37,6 +37,8 @@ a {
 }
 .logo_reservia {
     flex-grow: 2;
+    position: relative;
+    bottom: 15px;
 }
 .logo_reservia img {
     height: 45px;
