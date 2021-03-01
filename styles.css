@@ -77,8 +77,11 @@ header h2 {
     margin-bottom: 10px;
 }
 
-@media all and (max-width: 512px)
+@media all and (max-width: 495px)
 {
+    .logo_reservia {
+        left: 50px;
+    }
     .ancre {
         order: 3;
         flex-grow: 1;
@@ -137,8 +140,6 @@ input[type=search]::placeholder {
 }
 
 input[type=submit] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     height: 50px;
     background-color: #0065FC;
     color: white;
@@ -173,10 +174,8 @@ input[type=submit] {
     margin-top: 10px;
     justify-content: flex-start;
 }
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.filtres p {
+    width: 75px;
 }
 .checkbox {
     display: inline-block;
@@ -206,16 +205,18 @@ input[type=checkbox] {
 }
 .icone_checkbox {
     color: #0065FC;
-    width: 46px;
+    width: 50px;
     background-color: #DEEBFF;
-    line-height: 46px;
+    line-height: 50px;
     border-radius: 50%;
-    border: 2px solid #DEEBFF;
     bottom: 2px;
     right: 2px;
     font-size: 1.1em;
 }
-
+input[type=checkbox] {
+    position: absolute;
+    left: -9999px;
+}
 .bouton:hover {
     background-color: #DEEBFF;
 }
@@ -256,7 +257,7 @@ input[type=checkbox] {
         color: white;
         background-color: #0065FC;
         border-radius: 15px 15px 15px 15px;
-        border: 2px #0065FC solid;
+        border: unset;
     }
 
     .text_checkbox {
