@@ -37,6 +37,8 @@ a {
 }
 .logo_reservia {
     flex-grow: 2;
+    position: relative;
+    bottom: 15px;
 }
 .logo_reservia img {
     height: 45px;
@@ -75,13 +77,15 @@ header h2 {
     margin-bottom: 10px;
 }
 
-@media all and (max-width: 512px)
+@media all and (max-width: 495px)
 {
+    .logo_reservia {
+        left: 50px;
+    }
     .ancre {
         order: 3;
         flex-grow: 1;
     }
-
     .ancre_activite, .ancre_hebergement {
         width: 50%;
     }
@@ -120,8 +124,6 @@ fieldset {
 }
 
 input[type=search] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     height: 50px;
     font-size: 1em;
     font-weight: bold;
@@ -138,8 +140,6 @@ input[type=search]::placeholder {
 }
 
 input[type=submit] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     height: 50px;
     background-color: #0065FC;
     color: white;
@@ -174,10 +174,8 @@ input[type=submit] {
     margin-top: 10px;
     justify-content: flex-start;
 }
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.filtres p {
+    width: 75px;
 }
 .checkbox {
     display: inline-block;
@@ -207,16 +205,18 @@ input[type=checkbox] {
 }
 .icone_checkbox {
     color: #0065FC;
-    width: 46px;
+    width: 50px;
     background-color: #DEEBFF;
-    line-height: 46px;
+    line-height: 50px;
     border-radius: 50%;
-    border: 2px solid #DEEBFF;
     bottom: 2px;
     right: 2px;
     font-size: 1.1em;
 }
-
+input[type=checkbox] {
+    position: absolute;
+    left: -9999px;
+}
 .bouton:hover {
     background-color: #DEEBFF;
 }
@@ -257,11 +257,18 @@ input[type=checkbox] {
         color: white;
         background-color: #0065FC;
         border-radius: 15px 15px 15px 15px;
-        border: 2px #0065FC solid;
+        border: unset;
     }
 
     .text_checkbox {
         font-size: 0.8em;
+    }
+}
+@media all and (max-width: 350px)
+{
+    input[type="search"] {
+        padding-left: 5px;
+        width: 100%;
     }
 }
 /*fin de la partie recherche et filtre */
@@ -494,6 +501,19 @@ footer li {
         width: 80%;
     }
 }
+@media all and (max-width: 350px)
+{
+    .bloc_hebergement h2, .bloc_hebergement a {
+        width: 100%;
+    }
+    .populaire, .hebergement {
+        min-width: initial;
+        width: 100%;
+    }
+    .bloc_populaire {
+        flex-grow: 1;
+    }
+}
 
 /*fin de la partie hébergement*/
 /*à partir d'ici je manipule les activités*/
@@ -606,6 +626,13 @@ footer li {
     }
     .activite:nth-child(1n+1) img {
         height: 135px;
+    }
+}
+@media all and (max-width: 350px)
+{
+    .activite, .activite img {
+        min-width: initial;
+        width: 100%;
     }
 }
 /*fin de la partie activités*/
