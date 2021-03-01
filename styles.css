@@ -121,8 +121,6 @@ fieldset {
 }
 
 input[type=search] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     height: 50px;
     font-size: 1em;
     font-weight: bold;
@@ -263,6 +261,13 @@ input[type=checkbox] {
 
     .text_checkbox {
         font-size: 0.8em;
+    }
+}
+@media all and (max-width: 350px)
+{
+    input[type="search"] {
+        padding-left: 5px;
+        width: 100%;
     }
 }
 /*fin de la partie recherche et filtre */
@@ -495,6 +500,19 @@ footer li {
         width: 80%;
     }
 }
+@media all and (max-width: 350px)
+{
+    .bloc_hebergement h2, .bloc_hebergement a {
+        width: 100%;
+    }
+    .populaire, .hebergement {
+        min-width: initial;
+        width: 100%;
+    }
+    .bloc_populaire {
+        flex-grow: 1;
+    }
+}
 
 /*fin de la partie hébergement*/
 /*à partir d'ici je manipule les activités*/
@@ -607,6 +625,13 @@ footer li {
     }
     .activite:nth-child(1n+1) img {
         height: 135px;
+    }
+}
+@media all and (max-width: 350px)
+{
+    .activite, .activite img {
+        min-width: initial;
+        width: 100%;
     }
 }
 /*fin de la partie activités*/
